@@ -41,6 +41,34 @@ class NetworkHelper {
         // this ultimately leads to debugging error and time lost if
         // you dont't explicitly resume() request
         let dataTask = session.dataTask(with: url) { (data, response, error) in
+            // 1. Here we check for client network error
+            if let error = error {
+                completion(.failure(.networkClientError(error)))
+            }
+            // 2. Downcast URLResponse (response) to HTTPURLResponse to
+            // get access to the statusCode property on HTTPURLResponse
+            guard let urlResponse = response as? HTTPURLResponse else {
+                completion(.failure(.noResponse))
+                return
+            }
+            // 3. Unwrap the data onject
+            guard let data = data else {
+                completion(.failure(.noData))
+                return
+            }
+            
+            // 4. Validate that the status code is in the 200 range otherwise it's a bad status code
+            
+            switch urlResponse.statusCode {
+            case 200...299: break
+            default:
+                completion(.failure(.badStatusCode(urlResponse.statusCode)))
+                return
+            }
+            
+            // 5. Capture data as success case
+            completion(.success(data))
+            
             
         }
         dataTask.resume()
