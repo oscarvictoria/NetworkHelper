@@ -11,7 +11,7 @@ import Foundation
 struct JokeAPIClient {
     
     
-    static func getJokes() -> [Joke] {
+    static func getJokes(completion: @escaping (Result <[Joke], AppError>) -> ()) {
         let endpointURLString = "https://official-joke-api.appspot.com/jokes/programming/ten"
         var jokes = [Joke]()
         NetworkHelper.shared.performDataTask(with: endpointURLString ) { (result) in
@@ -22,12 +22,13 @@ struct JokeAPIClient {
             case .success(let data):
                 do {
                      jokes = try JSONDecoder().decode([Joke].self, from: data)
-                    print("there are \(jokes.count) jokes")
+                    let someJokes = jokes
+                    completion(.success(someJokes))
                 } catch {
                     print("decoding error \(error)")
                 }
             }
         }
-        return jokes
+      
     }
 }

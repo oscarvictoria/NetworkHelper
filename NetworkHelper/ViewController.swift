@@ -17,7 +17,7 @@ let urlString = "https://images.mediotiempo.com/NNWNtO-1MBlNG0eHUwNFE0aXhbU=/958
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadJokes()
+        
     }
 
     @IBAction func loadImagePressed(_ sender: UIBarButtonItem) {
@@ -35,10 +35,7 @@ let urlString = "https://images.mediotiempo.com/NNWNtO-1MBlNG0eHUwNFE0aXhbU=/958
         }
     }
     
-    func loadJokes() {
-        let jokes = JokeAPIClient.getJokes()
-        print("loadJokes: \(jokes.count)")
-    }
+  
     
 
 }

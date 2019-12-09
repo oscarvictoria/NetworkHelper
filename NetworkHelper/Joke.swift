@@ -17,5 +17,5 @@ struct Joke: Decodable {
     let id: Int
     let type: String
     let setup: String
-    let puncline: String
+    let punchline: String
 }

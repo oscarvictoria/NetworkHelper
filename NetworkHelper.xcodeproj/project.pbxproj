@@ -20,6 +20,7 @@
 		BE5C97F4239AC53C001B84E3 /* JokeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C97F3239AC53C001B84E3 /* JokeAPIClient.swift */; };
 		BE5C97F6239ACA6E001B84E3 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C97F5239ACA6E001B84E3 /* Podcast.swift */; };
 		BE5C97F8239ACB24001B84E3 /* PodcastAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5C97F7239ACB24001B84E3 /* PodcastAPIClient.swift */; };
+		BE6F5492239DFACA002A4381 /* JokesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE6F5491239DFACA002A4381 /* JokesViewController.swift */; };
 		BEC831A5239CA5BA005BF533 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC831A4239CA5BA005BF533 /* PodcastViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		BE5C97F3239AC53C001B84E3 /* JokeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAPIClient.swift; sourceTree = "<group>"; };
 		BE5C97F5239ACA6E001B84E3 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		BE5C97F7239ACB24001B84E3 /* PodcastAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastAPIClient.swift; sourceTree = "<group>"; };
+		BE6F5491239DFACA002A4381 /* JokesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesViewController.swift; sourceTree = "<group>"; };
 		BEC831A4239CA5BA005BF533 /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				BE5C97F1239AC41A001B84E3 /* Joke.swift */,
 				BE5C97F3239AC53C001B84E3 /* JokeAPIClient.swift */,
 				BE5C97D1239AAD6B001B84E3 /* Main.storyboard */,
+				BE6F5491239DFACA002A4381 /* JokesViewController.swift */,
 				BE5C97D4239AAD6D001B84E3 /* Assets.xcassets */,
 				BE5C97D6239AAD6D001B84E3 /* LaunchScreen.storyboard */,
 				BE5C97D9239AAD6D001B84E3 /* Info.plist */,
@@ -225,6 +228,7 @@
 				BE5C97D0239AAD6B001B84E3 /* ViewController.swift in Sources */,
 				BE5C97F4239AC53C001B84E3 /* JokeAPIClient.swift in Sources */,
 				BE5C97F2239AC41A001B84E3 /* Joke.swift in Sources */,
+				BE6F5492239DFACA002A4381 /* JokesViewController.swift in Sources */,
 				BE5C97F0239AB445001B84E3 /* AppError.swift in Sources */,
 				BE5C97F8239ACB24001B84E3 /* PodcastAPIClient.swift in Sources */,
 				BE5C97CC239AAD6B001B84E3 /* AppDelegate.swift in Sources */,

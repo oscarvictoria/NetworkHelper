@@ -38,7 +38,6 @@ class PodcastViewController: UIViewController {
             case .failure(let appError):
                 print("App error \(appError)")
             case .success(let podcast):
-                print("\(podcast).count was found")
                 self?.podcast = podcast
             }
         }
